@@ -22538,7 +22538,7 @@ h3 {
     0 12px 24px -4px rgba(145, 158, 171, 0.12);
 }
 .footer {
-  background-color: var(--fc-light);
+  /* background-color: var(--fc-light); */
   padding: 4rem 0;
 }
 .footer .nav .nav-item .nav-link {

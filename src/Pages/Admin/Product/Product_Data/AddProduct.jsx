@@ -468,11 +468,11 @@ debugger
                               <label htmlFor="example-select" className="col-md-3 col-form-label">Vendor </label>
                               <div className="col-md-9">
                                 <select className="form-select" id="example-select" onChange={(e) => setVendorId(e.target.value)} name='VendorId'>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft</option>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft</option>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft 3</option>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft 4</option>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft 5</option>
+                                  <option value={"Mobiteq pay"}>Mobiteq pay</option>
+                                  <option value={"Mobiteq pay"}>Mobiteq pay</option>
+                                  <option value={"Mobiteq pay"}>Mobiteq pay 3</option>
+                                  <option value={"Mobiteq pay"}>Mobiteq pay 4</option>
+                                  <option value={"Mobiteq pay"}>Mobiteq pay 5</option>
                                 </select>
                               </div>
                             </div>

@@ -242,7 +242,7 @@ a:hover {
   margin-left: 30px;
 }
 
-.popover2 {
+.popover3 {
   margin-top: 0 !important;
 }
 
@@ -376,10 +376,13 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .popover2 {
-    margin-top: 0 !important;
+  .popover3 {
+    /* margin-top: 0 !important;
     margin-left: -120px !important;
-    left: -120px;
+    left: -120px; */
+    margin-top: -28px !important;
+        margin-left: -19px !important;
+        left: -134px;
 
   }
   .reviewSubmitBtn{

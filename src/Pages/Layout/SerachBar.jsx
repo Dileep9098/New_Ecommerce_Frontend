@@ -19,7 +19,7 @@ export default function SearchBar({setLogoUrl}) {
     textColor: "#000000",
     borderColor: "#ced4da",
     status: "Active",
-    logo: "assets/images/logo/freshcart-logo.svg",
+    logo: "assets/images/logo/mobiteqLogo.png",
     icons: [],
   });
 

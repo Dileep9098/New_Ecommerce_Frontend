@@ -271,8 +271,8 @@
 
 @media (max-width: 768px) {
     .popover2 {
-        /* margin-top: 0 !important; */
-        margin-left: 100px !important;
+        margin-top: 0 !important;
+        margin-left: -100px !important;
     }
 
     .shareBox {

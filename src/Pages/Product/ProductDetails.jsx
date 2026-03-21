@@ -425,7 +425,7 @@ export default function ProductDetails() {
                                             </div>
                                         </div>
                                         {showPopover && (
-                                            <div ref={popoverRef} className="popover popover2">
+                                            <div ref={popoverRef} className="popover popover3">
                                                 <header>
                                                     <button className="close-button" onClick={togglePopover} aria-label="Close Share Popup">
                                                         <span className="material-symbols-outlined">close</span>
@@ -435,25 +435,25 @@ export default function ProductDetails() {
                                                 <div className="popover-body">
                                                     <ul className="share-options">
                                                         <li>
-                                                            <Link className="share-option email" to="mailto:info@parijathandicraft.com" onClick={togglePopover}>
+                                                            <Link className="share-option email" to="mailto:care@mobiteqpay.com" onClick={togglePopover}>
                                                                 <span className="material-symbols-outlined text-dark me-2">mail</span>
                                                                 <span className="label">Email</span>
                                                             </Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="share-option pinterest" to="https://in.pinterest.com/handicraftparijat/" onClick={togglePopover}>
+                                                            <Link className="share-option pinterest" to="#" onClick={togglePopover}>
                                                                 <i class="bi bi-pinterest me-2 fs-4 text-red-500"></i>
                                                                 <span className="label">Pinterest</span>
                                                             </Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="share-option facebook" to="https://www.facebook.com/prijathandicraft/" onClick={togglePopover}>
+                                                            <Link className="share-option facebook" to="#" onClick={togglePopover}>
                                                                 <i class="bi bi-facebook me-2 fs-4 text-blue-500"></i>
                                                                 <span className="label">Facebook</span>
                                                             </Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="share-option twitter" to="https://x.com/handicraftpari1" onClick={togglePopover}>
+                                                            <Link className="share-option twitter" to="#" onClick={togglePopover}>
                                                                 <i class="bi bi-twitter-x me-2 fs-4 text-dark"></i>
                                                                 <span className="label">X</span>
                                                             </Link>
@@ -621,27 +621,27 @@ export default function ProductDetails() {
                                     <div className="footer__widget__social social-icon" >
                                         <h6 className='text-dark'>follow us</h6>
 
-                                        <Link to="https://www.facebook.com/prijathandicraft/" target="_blank" className="social-icon1">
+                                        <Link to="#" target="_blank" className="social-icon1">
                                             <i class="bi bi-facebook  "></i>
                                         </Link>
 
-                                        <Link to="https://www.instagram.com/parijathandicraft/" target="_blank">
+                                        <Link to="https://www.instagram.com/mobiteq_pay/" target="_blank">
                                             <i class="bi bi-instagram "></i>
                                         </Link>
 
-                                        <Link to="https://www.linkedin.com/in/parijat-handicraft-1a5134147/" target="_blank">
+                                        <Link to="#" target="_blank">
                                             <i class="bi bi-linkedin "></i>
                                         </Link>
 
-                                        <Link to="https://x.com/handicraftpari1" target="_blank">
+                                        <Link to="#" target="_blank">
                                             <i class="bi bi-twitter-x "></i>
                                         </Link>
 
-                                        <Link to="https://in.pinterest.com/handicraftparijat/" target="_blank">
+                                        <Link to="#/" target="_blank">
                                             <i class="bi bi-pinterest "></i>
                                         </Link>
 
-                                        <Link to="https://www.youtube.com/@Pari0617" target="_blank">
+                                        <Link to="#" target="_blank">
                                             <i class="bi bi-youtube " ></i>
                                         </Link>
 

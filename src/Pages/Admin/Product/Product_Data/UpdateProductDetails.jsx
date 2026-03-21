@@ -525,7 +525,7 @@ export default function UpdateProductDetails() {
                               <label htmlFor="example-select" className="col-md-3 col-form-label">Vendor </label>
                               <div className="col-md-9">
                                 <select className="form-select" id="example-select" onChange={(e) => setVendorId(e.target.value)} name='VendorId' value={VendorId}>
-                                  <option value={"Parijat Handcraft"}>Parijat Handcraft</option>
+                                  <option value={"NM"}>NM</option>
 
                                 </select>
                               </div>

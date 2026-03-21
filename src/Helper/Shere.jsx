@@ -53,25 +53,25 @@ export default function Shere(props) {
                     <div className="popover-body">
                         <ul className="share-options">
                             <li>
-                                <a className="share-option email" href="mailto:info@parijathandicraft.com" onClick={togglePopover}>
+                                <a className="share-option email" href="mailto:care@mobiteqpay.com" onClick={togglePopover}>
                                     <span className="material-symbols-outlined text-dark me-2">mail</span>
                                     <span className="label">Email</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="share-option pinterest" href="https://in.pinterest.com/handicraftparijat/" onClick={togglePopover}>
+                                <a className="share-option pinterest" href="#" onClick={togglePopover}>
                                   <i class="bi bi-pinterest me-2 fs-4 text-red-500"></i>
                                     <span className="label">Pinterest</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="share-option facebook" href="https://www.facebook.com/prijathandicraft/" onClick={togglePopover}>
+                                <a className="share-option facebook" href="#" onClick={togglePopover}>
                                     <i class="bi bi-facebook me-2 fs-4 text-blue-500"></i>
                                     <span className="label">Facebook</span>
                                 </a>
                             </li>
                             <li>
-                                <a className="share-option twitter" href="https://x.com/handicraftpari1" onClick={togglePopover}>
+                                <a className="share-option twitter" href="#" onClick={togglePopover}>
                                    <i class="bi bi-twitter-x me-2 fs-4 text-dark"></i>
                                     <span className="label">X</span>
                                 </a>

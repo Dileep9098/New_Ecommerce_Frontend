@@ -180,7 +180,7 @@ export default function PayUFailResponse() {
             const params = {
                 "order_id": `order_${orderDetails.id}`,
                 "order_date": new Date().toISOString(),
-                "pickup_location": "PARIJAT HANDICRAFT",
+                "pickup_location": "",
                 "comment": "Reseller: M/s Goku",
                 "billing_customer_name": orderDetails.customerName,
                 "billing_last_name": orderDetails.customerLastName,

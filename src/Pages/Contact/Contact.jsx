@@ -78,7 +78,7 @@ export default function Contact() {
                                     <i className="ri-map-pin-fill"></i>
                                     <div>
                                         <h3>Parmanent Address</h3>
-                                        <p>Address: SHOP NO-27GF, GDA SHOPPING COMPLEX NYAY KHAND-1, INDIRAPURAM, GHAZIABAD-201014, UTTAR PRADESH
+                                        <p>Address: B-86, FIRST FLOOR, SECTOR-60, NOIDA, GAUTAM BUDDHA  NAGAR, UTTAR PRADESH-201301
                                         </p>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                                     <i className="ri-phone-fill"></i>
                                     <div>
                                         <h3>Call Us</h3>
-                                        <p>+91 9953567333</p>
+                                        <p>+91 95883 47500</p>
                                     </div>
                                 </div>
 
@@ -95,7 +95,7 @@ export default function Contact() {
                                     <i className="ri-mail-send-line"></i>
                                     <div>
                                         <h3>Email Us</h3>
-                                        <p><Link to="mailto:info@parijathandicraft.com">info@parijathandicraft.com</Link></p>
+                                        <p><Link to="mailto:care@mobiteqpay.com">care@mobiteqpay.com</Link></p>
                                     </div>
                                 </div>
 
