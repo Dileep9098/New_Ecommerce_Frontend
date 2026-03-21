@@ -11,7 +11,7 @@ export default function MobileScreenSideBar() {
             >
                 <div className="navbar-vertical">
                     <div className="px-4 py-5 d-flex justify-content-between align-items-center">
-                        <a href="../index.html" className="navbar-brand">
+                        <a href="/" className="navbar-brand">
                             <img src="../assets/images/logo/mobiteqLogo.png" alt="" />
                         </a>
                         <button
