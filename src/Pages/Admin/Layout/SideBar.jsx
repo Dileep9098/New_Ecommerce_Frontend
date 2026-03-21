@@ -9,7 +9,7 @@ export default function SideBar() {
 				<div className="navbar-vertical">
 					<div className="px-4 py-5">
 						<Link to="/admin/dashboard" className="navbar-brand">
-							<img src="../assets/images/logo/freshcart-logo.svg" alt="" />
+							<img src="../assets/images/logo/mobiteqLogo.png" alt="" />
 						</Link>
 					</div>
 					<div className="navbar-vertical-content flex-grow-1" data-simplebar="">

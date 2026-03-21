@@ -515,7 +515,7 @@
 //                                     {/* text */}
 //                                     <p>
 //                                         <small>
-//                                             By placing your order, you agree to be bound by the Freshcart
+//                                             By placing your order, you agree to be bound by the Mobiteq Ecommerce
 //                                             <a href="#!">Terms of Service</a>
 //                                             and
 //                                             <a href="#!">Privacy Policy.</a>
@@ -1009,7 +1009,7 @@ export default function Cart() {
                                          <div class="d-grid mt-2"><Link to='/all-product/0/all-categories' class="btn btn-outline-dark mb-1"> Continue Shopping</Link></div>
                                         <p>
                                             <small>
-                                                By placing your order, you agree to be bound by the Freshcart
+                                                By placing your order, you agree to be bound by the Mobiteq Ecommerce
                                                 <a href="#!">Terms of Service</a>
                                                 and
                                                 <a href="#!">Privacy Policy.</a>

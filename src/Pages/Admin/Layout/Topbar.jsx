@@ -203,7 +203,7 @@ export default function Topbar() {
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-end p-0">
                                         <div className="lh-1 px-5 py-4 border-bottom">
-                                            <h5 className="mb-1 h6">FreshCart Admin</h5>
+                                            <h5 className="mb-1 h6">Mobiteq Ecommerce Admin</h5>
                                             <small>admindemo@email.com</small>
                                         </div>
                                         <ul className="list-unstyled px-2 py-3">

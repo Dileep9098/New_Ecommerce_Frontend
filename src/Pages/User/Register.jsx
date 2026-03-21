@@ -38,8 +38,8 @@ export default function Register() {
                     <div className="container justify-content-center justify-content-lg-between">
                         <Link className="navbar-brand" to="/">
                             <img
-                                src="/assets/images/logo/freshcart-logo.svg"
-                                alt="FreshCart Logo"
+                                src="/assets/images/logo/mobiteqLogo.png"
+                                alt="Mobiteq Ecommerce Logo"
                                 width={150}
                                 height={40}
                             />
@@ -66,8 +66,8 @@ export default function Register() {
                             </div>
                             <div className="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
                                 <div className="mb-lg-9 mb-5">
-                                    <h1 className="mb-1 h2 fw-bold">Sign in to FreshCart</h1>
-                                    <p>Welcome back to FreshCart! Enter your email to get started.</p>
+                                    <h1 className="mb-1 h2 fw-bold">Sign in to Mobiteq Ecommerce</h1>
+                                    <p>Welcome back to Mobiteq Ecommerce! Enter your email to get started.</p>
                                 </div>
                                 <form className="needs-validation" noValidate onSubmit={handleSubmit}>
                                     <div className="row g-3">

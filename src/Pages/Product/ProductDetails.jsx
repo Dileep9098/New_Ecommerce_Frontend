@@ -1031,7 +1031,7 @@ export default function ProductDetails() {
                                                                         <p>
                                                                             Product quality is good. But, weight seemed less than
                                                                             1kg. Since it is being sent in open package, there is
-                                                                            a possibility of pilferage in between. FreshCart sends
+                                                                            a possibility of pilferage in between. Mobiteq Ecommerce sends
                                                                             the veggies and fruits through sealed plastic covers
                                                                             and Barcode on the weight etc. .
                                                                         </p>
@@ -1104,7 +1104,7 @@ export default function ProductDetails() {
                                                                         <p>
                                                                             Product quality is good. But, weight seemed less than
                                                                             1kg. Since it is being sent in open package, there is
-                                                                            a possibility of pilferage in between. FreshCart sends
+                                                                            a possibility of pilferage in between. Mobiteq Ecommerce sends
                                                                             the veggies and fruits through sealed plastic covers
                                                                             and Barcode on the weight etc. .
                                                                         </p>

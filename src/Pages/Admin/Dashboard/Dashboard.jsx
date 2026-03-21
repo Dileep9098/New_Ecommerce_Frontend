@@ -20,9 +20,9 @@ export default function Dashboard() {
                                     }}
                                 >
                                     <div className="card-body p-lg-12">
-                                        <h1>Welcome back! FreshCart</h1>
+                                        <h1>Welcome back! Mobiteq Ecommerce</h1>
                                         <p>
-                                            FreshCart is simple &amp; clean design for developer and
+                                            Mobiteq Ecommerce is simple &amp; clean design for developer and
                                             designer.
                                         </p>
                                         <a href="#" className="btn btn-primary">

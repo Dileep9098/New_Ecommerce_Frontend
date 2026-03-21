@@ -95,12 +95,16 @@ export default function TopbarManage() {
 
     // Topbar fetch
     useEffect(() => {
-        const tooltipTriggerList = Array.from(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        );
-        tooltipTriggerList.forEach((el) => {
-            new window.bootstrap.Tooltip(el);
-        });
+        // Initialize tooltips only if Bootstrap is available
+        if (typeof window !== 'undefined' && window.bootstrap && window.bootstrap.Tooltip) {
+            const tooltipTriggerList = Array.from(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            tooltipTriggerList.forEach((el) => {
+                new window.bootstrap.Tooltip(el);
+            });
+        }
+        
         const fetchSettings = async () => {
             try {
                 const response = await axiosInstance.get(Config.END_POINT_LIST["GET_THEME_TOPBAR"], { withCredentials: true });

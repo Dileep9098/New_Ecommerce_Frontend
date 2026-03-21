@@ -341,10 +341,10 @@ export default function SearchBar({setLogoUrl}) {
                 </Tooltip>
               ) : (
                 <Link
-                  to="#!"
+                  to="/login"
                   className="text-muted"
-                  data-bs-toggle="modal"
-                  data-bs-target="#userModal"
+                  // data-bs-toggle="modal"
+                  // data-bs-target="#userModal"
                 >
                   <i className="fa-regular fa-user fs-5"></i>
                 </Link>
@@ -405,14 +405,14 @@ export default function SearchBar({setLogoUrl}) {
 //                         <div className="col-xxl-2 col-lg-3 col-md-6 col-5">
 //                             <Link className="navbar-brand d-none d-lg-block" to="index.html">
 //                                 <img
-//                                     src="assets/images/logo/freshcart-logo.svg"
+//                                     src="assets/images/logo/mobiteqLogo.png"
 //                                     alt="eCommerce HTML Template"
 //                                 />
 //                             </Link>
 //                             <div className="d-flex justify-content-between w-100 d-lg-none">
 //                                 <Link className="navbar-brand" to="index.html">
 //                                     <img
-//                                         src="assets/images/logo/freshcart-logo.svg"
+//                                         src="assets/images/logo/mobiteqLogo.png"
 //                                         alt="eCommerce HTML Template"
 //                                     />
 //                                 </Link>
