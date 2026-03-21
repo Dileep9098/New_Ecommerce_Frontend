@@ -27,33 +27,33 @@
 
 
 
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-// import tailwindcss from '@tailwindcss/vite'
-
-// export default defineConfig({
-//   base: "./", // 🔥 YE ADD KARNA HI HAI
-
-//   plugins: [react(), tailwindcss()],
-
-//   css: {
-//     lightningcss: {
-//       errorRecovery: true,
-//     },
-//   },
-
-//   build: {
-//     cssMinify: "lightningcss",
-//   }
-// })
-
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()   , tailwindcss(),
-],
+  base: "./", // 🔥 YE ADD KARNA HI HAI
+
+  plugins: [react(), tailwindcss()],
+
+  css: {
+    lightningcss: {
+      errorRecovery: true,
+    },
+  },
+
+  build: {
+    cssMinify: "lightningcss",
+  }
 })
+
+
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+// import tailwindcss from '@tailwindcss/vite'
+
+// // https://vite.dev/config/
+// export default defineConfig({
+//   plugins: [react()   , tailwindcss(),
+// ],
+// })
