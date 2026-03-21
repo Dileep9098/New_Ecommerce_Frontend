@@ -32,6 +32,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: "./", // 🔥 YE ADD KARNA HI HAI
+
   plugins: [react(), tailwindcss()],
 
   css: {
