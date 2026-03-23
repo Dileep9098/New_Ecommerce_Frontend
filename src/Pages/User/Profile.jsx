@@ -316,7 +316,7 @@ export default function Profile() {
                             <hr />
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#" onClick={logout} data-bs-dismiss="offcanvas" aria-label="Close" >
                                 <i className="feather-icon icon-log-out me-2" />
                                 Log out
                             </a>

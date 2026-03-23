@@ -26,7 +26,7 @@ export default function PopularProduct({ allProduct }) {
                         {
                             allProduct && allProduct.length > 0 && allProduct.map((item, ind) => (
                                 <div className="col" key={ind}>
-                                    <div className="card card-product mt-4 ">
+                                    <Link className="card card-product mt-4 " to={`product-details/${item._id}/${item.ProductsCategoriesMappings.map((category) => replaceWhiteSpacesWithDashSymbolInUrl(category.Name)).join('-') ?? "shop"}/${replaceWhiteSpacesWithDashSymbolInUrl(item.ProductName)}`}>
                                         <div className="card-body " style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                                             <div className="text-center position-relative">
                                                 <div className="position-absolute top-0 start-0">
@@ -48,8 +48,8 @@ export default function PopularProduct({ allProduct }) {
                                                     />
                                                 </Link>
                                                 <div className="card-product-action">
-                                                    <a
-                                                        href="#!"
+                                                    <Link
+                                                        to={`product-details/${item._id}/${item.ProductsCategoriesMappings.map((category) => replaceWhiteSpacesWithDashSymbolInUrl(category.Name)).join('-') ?? "shop"}/${replaceWhiteSpacesWithDashSymbolInUrl(item.ProductName)}`}
                                                         className="btn-action"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#quickViewModal"
@@ -60,35 +60,35 @@ export default function PopularProduct({ allProduct }) {
                                                             data-bs-html="true"
                                                             title="Quick View"
                                                         />
-                                                    </a>
-                                                    <a
-                                                        href="pages/shop-wishlist.html"
+                                                    </Link>
+                                                    <Link
+                                                        to="/my-wishlist"
                                                         className="btn-action"
                                                         data-bs-toggle="tooltip"
                                                         data-bs-html="true"
                                                         title="Wishlist"
                                                     >
                                                         <i className="bi bi-heart" />
-                                                    </a>
-                                                    <a
-                                                        href="#!"
+                                                    </Link>
+                                                    <Link
+                                                        to="#!"
                                                         className="btn-action"
                                                         data-bs-toggle="tooltip"
                                                         data-bs-html="true"
                                                         title="Compare"
                                                     >
                                                         <i className="bi bi-arrow-left-right" />
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                             {/* <div className="text-small mb-1">
-                                                <a href="#!" className="text-decoration-none text-muted">
+                                                <Link to="#!" className="text-decoration-none text-muted">
                                                     <small>Bakery &amp; Biscuits</small>
-                                                </a>
+                                                </Link>
                                             </div> */}
                                             <h2 className="fs-6">
                                                 <Link
-                                                    href="pages/shop-single.html"
+                                                    to="pages/shop-single.html"
                                                     className="text-inherit text-decoration-none"
                                                 >
                                                     {item.ProductName.slice(0, 55)}...
@@ -109,14 +109,14 @@ export default function PopularProduct({ allProduct }) {
                                                     <p className="" style={{ color: "#020237", fontSize: "18px" }}> &#8377;{item.Price}<sub><del>{item.OldPrice}</del></sub> </p>
                                                 </div>
                                                 <div>
-                                                    <a href="#!" className="btn btn-primary btn-sm">
+                                                    <Link to="#!" className="btn btn-primary btn-sm">
                                                         <i class="bi bi-plus-lg me-2"></i>
                                                         Add
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             ))
                         }
@@ -128,16 +128,16 @@ export default function PopularProduct({ allProduct }) {
                                         <div className="position-absolute top-0 start-0">
                                             <span className="badge bg-success">14%</span>
                                         </div>
-                                        <a href="pages/shop-single.html">
+                                        <Link to="pages/shop-single.html">
                                             <img
                                                 src="assets/images/products/product-img-2.jpg"
                                                 alt="Grocery Ecommerce Template"
                                                 className="mb-3 img-fluid"
                                             />
-                                        </a>
+                                        </Link>
                                         <div className="card-product-action">
-                                            <a
-                                                href="#!"
+                                            <Link
+                                                to="#!"
                                                 className="btn-action"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#quickViewModal"
@@ -148,39 +148,39 @@ export default function PopularProduct({ allProduct }) {
                                                     data-bs-html="true"
                                                     title="Quick View"
                                                 />
-                                            </a>
-                                            <a
-                                                href="pages/shop-wishlist.html"
+                                            </Link>
+                                            <Link
+                                                to="/my-wishlist"
                                                 className="btn-action"
                                                 data-bs-toggle="tooltip"
                                                 data-bs-html="true"
                                                 title="Wishlist"
                                             >
                                                 <i className="bi bi-heart" />
-                                            </a>
-                                            <a
-                                                href="#!"
+                                            </Link>
+                                            <Link
+                                                to="#!"
                                                 className="btn-action"
                                                 data-bs-toggle="tooltip"
                                                 data-bs-html="true"
                                                 title="Compare"
                                             >
                                                 <i className="bi bi-arrow-left-right" />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="text-small mb-1">
-                                        <a href="#!" className="text-decoration-none text-muted">
+                                        <Link to="#!" className="text-decoration-none text-muted">
                                             <small>Bakery &amp; Biscuits</small>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <h2 className="fs-6">
-                                        <a
-                                            href="pages/shop-single.html"
+                                        <Link
+                                            to="pages/shop-single.html"
                                             className="text-inherit text-decoration-none"
                                         >
                                             NutriChoice Digestive
-                                        </a>
+                                        </Link>
                                     </h2>
                                     <div className="text-warning">
                                         <small>
@@ -197,7 +197,7 @@ export default function PopularProduct({ allProduct }) {
                                             <span className="text-dark">$24</span>
                                         </div>
                                         <div>
-                                            <a href="#!" className="btn btn-primary btn-sm">
+                                            <Link to="#!" className="btn btn-primary btn-sm">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width={16}
@@ -214,7 +214,7 @@ export default function PopularProduct({ allProduct }) {
                                                     <line x1={5} y1={12} x2={19} y2={12} />
                                                 </svg>
                                                 Add
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
