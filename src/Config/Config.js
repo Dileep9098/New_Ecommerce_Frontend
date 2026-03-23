@@ -1,6 +1,8 @@
 const Config = {
-    ADMIN_BASE_URL: "http://localhost:5000",
-    WEBSITE_IBASE_URL: "http://localhost:5173/",
+    ADMIN_BASE_URL: "https://new-ecommerce-backend-nljz.onrender.com",
+    // ADMIN_BASE_URL: "http://localhost:5000",
+    // WEBSITE_IBASE_URL: "http://localhost:5173/",
+    WEBSITE_IBASE_URL: "https://mobiteq-ecommerce.vercel.app/",
 
     END_POINT_LIST: {
 

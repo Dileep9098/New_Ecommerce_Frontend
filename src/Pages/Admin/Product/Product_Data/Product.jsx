@@ -1376,7 +1376,7 @@ console.log("All Product hai bhai",filteredRows);
                                             <TableCell>{product.id}</TableCell>
                                             <TableCell>
                                                 <img
-                                                    src={`http://localhost:5000/uploads/${product.Image}`}
+                                                    src={`https://new-ecommerce-backend-nljz.onrender.com/uploads/${product.Image}`}
                                                     alt={""}
                                                     width="70"
                                                     height="70"
