@@ -184,7 +184,7 @@ export const fetchCurrency = createAsyncThunk(
       // debugger
       // Using ipapi.co which supports CORS and is free
       // const response = await axios.get("https://ipapi.co/json/");
-      const response = await axios.get("https://ipapi.co/8.8.8.8/json/");
+      const response = await axios.get("https://ipapi.co/json/");
 
       
       const countryCode = response.data.country_code || "IN";
