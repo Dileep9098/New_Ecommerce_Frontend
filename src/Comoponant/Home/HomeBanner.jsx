@@ -363,8 +363,8 @@ export default function HomeBanner() {
                                       >
                                           <div className={`ps-lg-12 col-xxl-5 col-md-7 py-14 px-8 text-xs-center`}>
                                               <span className="badge text-bg-warning">{b.topTitle}</span>
-                                              <h2 className="text-dark display-5 fw-bold mt-4">{b.mainTitle}</h2>
-                                              <p className="lead d-none d-md-block">
+                                             <h2 className="text-white display-5 fw-bold mt-4" style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.9)" }}>{b.mainTitle}</h2>
+                                              <p className="lead d-none d-md-block text-white">
                                                   {b.bottomTitle}
                                               </p>
                                               <div className="d-flex  gap-2">
