@@ -44,7 +44,7 @@ export default function Home() {
             <PopularProduct allProduct={allProduct} />
             <CategoryFeature />
             <GeneralInfo />
-            <HotDealBanner />
+            {/* <HotDealBanner /> */}
             <DailyBestSells allProduct={allProduct} />
             <CampaignSection />
             <NewProduct AllProducts={allProduct} />

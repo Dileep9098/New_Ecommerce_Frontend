@@ -102,13 +102,13 @@ export default function HotDealBanner() {
   ];
 
   return (
-    <section className="hotdeal-section py-5">
+    <section className=" bg-gray-100 py-6 my-4">
       <div className="container">
-        <div className="row g-4">
+        <div className="row ">
           {banners.map((item, index) => (
             <div
               key={index}
-              className="col-12 col-md-6"
+              className="col-12 col-md-6 mb-3"
               data-aos={item.animation}
             >
               <div
