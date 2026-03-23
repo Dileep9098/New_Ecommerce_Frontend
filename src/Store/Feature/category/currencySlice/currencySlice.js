@@ -174,6 +174,67 @@
 
 
 
+// import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+// import axios from "axios";
+
+// export const fetchCurrency = createAsyncThunk(
+//   "currency/fetchCurrency",
+//   async () => {
+//     try {
+//       // Real user IP ke liye
+//       debugger
+//       const ipRes = await axios.get("https://ipwho.is/");
+//       // const ipRes = await axios.get("https://ipwho.is/95.163.32.140");
+
+//       // Testing ke liye fixed USA IP:
+//       // const ipRes = await axios.get("https://ipwho.is/8.8.8.8");
+
+//       const countryCode = ipRes.data.country_code || "IN";
+
+//       let userCurrency = "INR"; // default
+//       if (countryCode === "IN") {
+//         userCurrency = "INR";
+//       }
+//       let rate=userCurrency==="USD"?0.012: 1
+
+//       return { currency: userCurrency,rate:rate };
+//     } catch (err) {
+//       console.error("Currency fetch failed", err);
+//       return { currency: "INR",rate:1 }; // fallback INR
+//     }
+//   }
+// );
+
+// const currencySlice = createSlice({
+//   name: "currency",
+//   initialState: {
+//     currency: "INR",
+//     loading: true,
+//     rate:1
+//   },
+//   extraReducers: (builder) => {
+//     builder
+//       .addCase(fetchCurrency.pending, (state) => {
+//         state.loading = true;
+//       })
+//       .addCase(fetchCurrency.fulfilled, (state, action) => {
+//         state.currency = action.payload.currency;
+//         state.rate = action.payload.rate;
+//         state.loading = false;
+//       })
+//       .addCase(fetchCurrency.rejected, (state) => {
+//         state.loading = false;
+//         state.currency = "INR";
+//         state.rate = 1;
+
+//       });
+//   },
+// });
+
+// export default currencySlice.reducer;
+
+
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -181,26 +242,22 @@ export const fetchCurrency = createAsyncThunk(
   "currency/fetchCurrency",
   async () => {
     try {
-      // Real user IP ke liye
+      // Using ipapi.co which supports CORS and is free
       debugger
-      const ipRes = await axios.get("https://ipwho.is/");
-      // const ipRes = await axios.get("https://ipwho.is/95.163.32.140");
+      const response = await axios.get("https://ipapi.co/json/");
+      
+      const countryCode = response.data.country_code || "IN";
 
-      // Testing ke liye fixed USA IP:
-      // const ipRes = await axios.get("https://ipwho.is/8.8.8.8");
-
-      const countryCode = ipRes.data.country_code || "IN";
-
-      let userCurrency = "INR"; // default
+      let userCurrency = "USD"; // default
       if (countryCode === "IN") {
         userCurrency = "INR";
       }
-      let rate=userCurrency==="USD"?0.012: 1
+      let rate = userCurrency === "USD" ? 0.012 : 1;
 
-      return { currency: userCurrency,rate:rate };
+      return { currency: userCurrency, rate: rate };
     } catch (err) {
       console.error("Currency fetch failed", err);
-      return { currency: "INR",rate:1 }; // fallback INR
+      return { currency: "INR", rate: 1 }; // fallback INR
     }
   }
 );

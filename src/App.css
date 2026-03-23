@@ -11,3 +11,127 @@
 .hover-shadow:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
 }
+
+
+.bhaman-call-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 1000;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: whatsapp-pulse 2.5s infinite;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.bhaman-call-icon::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  z-index: -1;
+  animation: whatsapp-ring 2s infinite;
+}
+
+.bhaman-call-icon:hover {
+  transform: scale(1.15) rotate(5deg);
+  background: linear-gradient(135deg, #128c7e, #25d366);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.bhaman-call-icon:active {
+  transform: scale(0.95);
+}
+
+.bhaman-call-icon a {
+  color: white !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.bhaman-call-icon:hover a {
+  transform: scale(1.1);
+}
+
+.bhaman-call-icon a i {
+  animation: whatsapp-bounce 1.5s infinite alternate;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  z-index: 2;
+  position: relative;
+}
+
+/* 🔥 Modern WhatsApp Animations */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
+  }
+  100% {
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  }
+}
+
+@keyframes whatsapp-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes whatsapp-bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .bhaman-call-icon {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bhaman-call-icon {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 24px;
+  }
+}

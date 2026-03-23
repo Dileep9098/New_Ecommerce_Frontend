@@ -181,26 +181,24 @@ export const fetchCurrency = createAsyncThunk(
   "currency/fetchCurrency",
   async () => {
     try {
-      // Real user IP ke liye
-      const ipRes = await axios.get("https://ipwho.is/");
+      // debugger
+      // Using ipapi.co which supports CORS and is free
+      // const response = await axios.get("https://ipapi.co/json/");
+      const response = await axios.get("https://ipapi.co/8.8.8.8/json/");
+
       
-      // const ipRes = await axios.get("https://ipwho.is/95.163.32.140");
-
-      // Testing ke liye fixed USA IP:
-      // const ipRes = await axios.get("https://ipwho.is/8.8.8.8");
-
-      const countryCode = ipRes.data.country_code || "IN";
+      const countryCode = response.data.country_code || "IN";
 
       let userCurrency = "USD"; // default
       if (countryCode === "IN") {
         userCurrency = "INR";
       }
-      let rate=userCurrency==="USD"?0.012: 1
+      let rate = userCurrency === "USD" ? 0.012 : 1;
 
-      return { currency: userCurrency,rate:rate };
+      return { currency: userCurrency, rate: rate };
     } catch (err) {
       console.error("Currency fetch failed", err);
-      return { currency: "INR",rate:1 }; // fallback INR
+      return { currency: "INR", rate: 1 }; // fallback INR
     }
   }
 );
