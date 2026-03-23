@@ -209,6 +209,7 @@ export default function AllProducts() {
     }
 
     setSearchCategoryName(param1.category_name)
+    debugger
     if (param1.category_name == "all-categories") {
       dispatch(getAllProducts({ param, CategoryName: "" }))
     }

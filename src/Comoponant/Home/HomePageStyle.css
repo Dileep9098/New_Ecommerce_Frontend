@@ -409,6 +409,11 @@
     font-size: 0.9rem;
     max-width: 90px;
   }
+  .category-img {
+    height: 70px;
+  width: 70px;
+ 
+}
 }
 
 @media (max-width: 480px) {

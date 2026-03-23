@@ -30,8 +30,8 @@ export default function ShowcategoryHome() {
               }}
               allowTouchMove={false}
               breakpoints={{
-                376: { slidesPerView: 3 },
-                576: { slidesPerView: 3 },
+                376: { slidesPerView: 4 },
+                576: { slidesPerView: 4 },
                 768: { slidesPerView: 3 },
                 992: { slidesPerView: 4 },
                 1200: { slidesPerView: 8 },
@@ -47,7 +47,7 @@ export default function ShowcategoryHome() {
                       className="text-decoration-none text-inherit"
                     >
                       <div className="card card-product border-0 bg-transparent text-center">
-                        <div className="card-body p-3 d-flex flex-column align-items-center">
+                        <div className="card-body  d-flex flex-column align-items-center">
                           <div className="category-circle mb-2">
                             <img
                               src={`${BASE_URL}/category/${item.file}`}

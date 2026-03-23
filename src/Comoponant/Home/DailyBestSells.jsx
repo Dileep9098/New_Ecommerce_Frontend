@@ -20,7 +20,7 @@ export default function DailyBestSells({ allProduct }) {
                             </div>
                         </div>
                     </div>
-                    <div className="table-responsive-lg pb-6">
+                    <div className="table-responsive-lg pb-6" style={{ overflowX: "auto" }}>
                         <div className="row row-cols-lg-4 row-cols-1 row-cols-md-2 g-4 flex-nowrap">
                             <div className="col">
                                 <div
@@ -45,8 +45,8 @@ export default function DailyBestSells({ allProduct }) {
                                 </div>
                             </div>
                             {
-                                allProduct.slice(0, 3).map((item, ind) => (
-                                    <div className="col" key={ind}>
+                            allProduct && allProduct.length > 0 && allProduct.map((item, ind) => (
+                                    <div className="col" key={ind} >
                                         <div className="card card-product">
                                             <div className="card-body">
                                                 <div className="text-center position-relative">

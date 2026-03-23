@@ -29,12 +29,14 @@ export default function HomeBanner() {
 
                 if (response.data.success) {
                     const banners = response.data.allHomeBanners;
-                    setAllHomeBanner(banners);
+                    // ✅ Only get active banners where IsActive is "active"
+                    const activeBanners = banners.filter(banner => banner.IsActive === "active");
+                    setAllHomeBanner(activeBanners);
 
-                    // ✅ Yahan se bannerStyle set kar
-                    if (banners.length > 0) {
+                    // ✅ Yahan se bannerStyle set kar from active banners
+                    if (activeBanners.length > 0) {
                         // Example: agar sabka same style hai to pehla le le
-                        setSelectedBanner(banners[0].bannerStyle);
+                        setSelectedBanner(activeBanners[0].bannerStyle);
                     }
                 } else {
                     showErrorMsg(response.data.message);

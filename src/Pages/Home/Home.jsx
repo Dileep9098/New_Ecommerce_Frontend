@@ -15,39 +15,49 @@ import GeneralInfo from '../../Comoponant/Home/GeneralInfo';
 import CampaignSection from '../../Comoponant/Home/CompainingSection';
 import NewProduct from '../../Comoponant/Home/NewProduct';
 import ShowcategoryHome from '../../Comoponant/Home/ShowcategoryHome';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllProducts } from '../../Store/Feature/product/productSlice';
 export default function Home() {
 
     const [allProduct, setAllProduct] = useState([]);
+    const { isLoading, products, productCount } = useSelector((state) => state.product)
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axiosInstance.get(Config.END_POINT_LIST["GET_ALL_PRODUCTS"], { withCredentials: true });
-                if (response.data.success) {
-                    setAllProduct(response.data.allProductsFeatures);
-                } else {
-                    showErrorMsg(response.data.message);
-                }
-            } catch (error) {
-                showErrorMsg(error.response.data.message);
-            }
-        };
-        fetchData();
-    }, []);
+       
 
-    console.log("All Product get", allProduct)
+        // Fetch products with parameters
+        const param = {
+            CategoryID: "0",
+            ManufacturerID: "",
+            MaxPrice: null,
+            MinPrice: null,
+            OrderByColumnName: "",
+            PageNo: 1,
+            PageSize: 10,
+            Rating: null,
+            SearchTerm: "",
+            SizeID: ""
+        };
+
+        dispatch(getAllProducts({ param, CategoryName: "" }));
+    }, [dispatch]);
+
+    // console.log("All Product from state", allProduct);
+    // console.log("All Product from Redux", products);
 
     return (
         <>
-        <ShowcategoryHome/>
+            <ShowcategoryHome />
             <HomeBanner />
-            <PopularProduct allProduct={allProduct} />
+            <PopularProduct allProduct={products||[]} />
             <CategoryFeature />
             <GeneralInfo />
             {/* <HotDealBanner /> */}
-            <DailyBestSells allProduct={allProduct} />
+            <DailyBestSells allProduct={products||[]} />
             <CampaignSection />
-            <NewProduct AllProducts={allProduct} />
+            <NewProduct AllProducts={products} />
 
 
 

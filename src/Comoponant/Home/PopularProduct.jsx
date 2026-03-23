@@ -24,7 +24,7 @@ export default function PopularProduct({ allProduct }) {
                     </div>
                     <div className="row g-4 row-cols-lg-6 row-cols-2 row-cols-md-3">
                         {
-                            allProduct.map((item, ind) => (
+                            allProduct && allProduct.length > 0 && allProduct.map((item, ind) => (
                                 <div className="col" key={ind}>
                                     <div className="card card-product mt-4 ">
                                         <div className="card-body " style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
