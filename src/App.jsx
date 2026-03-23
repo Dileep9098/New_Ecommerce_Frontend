@@ -293,7 +293,7 @@ function App() {
       </BrowserRouter>
        <div className="bhaman-call-icon">
         <a
-            href="https://api.whatsapp.com/send?phone=919588347500&text=Hi%20there!%20I%20recently%20came%20across%20Mobiteq%20Ecommerce%20and%20I%20love%20your%20collection.%20Can%20you%20share%20more%20info%20about%20your%20products%20and%20how%20to%20place%20an%20order%3F"
+            href="https://api.whatsapp.com/send?phone=919588347500&text=Hi%20there!%20I%20recently%20came%20across%20Mobiteq%20%20and%20I%20love%20your%20collection.%20Can%20you%20share%20more%20info%20about%20your%20products%20and%20how%20to%20place%20an%20order%3F"
 
           target="_blank"
           rel="noopener noreferrer"
